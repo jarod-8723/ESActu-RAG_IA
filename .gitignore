@@ -1,0 +1,22 @@
+# =============================================================================
+# .gitignore — Projet ESActu
+# =============================================================================
+
+interface.env
+.venv/
+data/
+chroma_db/
+
+# ---------- Conservation du README.md du modèle d'embedding
+models/*
+!models/bge-m3/
+models/bge-m3/*
+!models/bge-m3/README.md
+__pycache__/
+*.pyc
+*.pyo
+.files/
+ 
+# ---------- Traductions Chainlit (générées automatiquement) 
+interface-esactu/.chainlit/translations/
+ 
