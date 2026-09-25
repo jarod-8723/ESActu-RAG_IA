@@ -1,0 +1,74 @@
+[project]
+user_env = []
+session_timeout = 3600
+user_session_timeout = 1296000  # 15 days
+cache = false
+persist_user_env = false
+mask_user_env = false
+allow_origins = ["*"]
+
+[features]
+unsafe_allow_html = true
+latex = true
+user_message_markdown = true
+user_message_autoscroll = true
+assistant_message_autoscroll = true
+auto_tag_thread = true
+edit_message = true
+allow_thread_sharing = false
+favorites = false
+
+[features.slack]
+reaction_on_message_received = false
+
+[features.spontaneous_file_upload]
+    enabled = true
+    accept = ["*/*"]
+    max_files = 20
+    max_size_mb = 500
+
+[features.audio]
+    enabled = false
+    sample_rate = 24000
+
+[features.mcp]
+    enabled = false
+
+[features.mcp.sse]
+    enabled = true
+
+[features.mcp.streamable-http]
+    enabled = true
+
+[features.mcp.stdio]
+    enabled = true
+    allowed_executables = [ "npx", "uvx" ]
+
+[UI]
+name = "ESActu, l'assistant du Master ESA !"
+
+logo = "/public/logoESA.png"
+logo_file_url = "/public/logo_light.png"
+default_avatar_file_url = "/public/logoESA.png"
+
+force_theme = "light"
+language = "fr-FR"
+layout = "wide"
+confirm_new_chat = true
+cot = "full"
+alert_style = "modern"
+avatar_size = 45
+
+custom_css = "/public/custom.css"
+
+login_page_image = "/public/login2.gif"
+
+[[UI.header_links]]
+    name = "Le site internet du Master ESA !"
+    display_name = "Site Master ESA"
+    icon_url = "https://www.master-esa.fr/favicon.ico"
+    url = "https://www.master-esa.fr"
+    target = "_blank"
+
+[meta]
+generated_by = "2.11.1"
