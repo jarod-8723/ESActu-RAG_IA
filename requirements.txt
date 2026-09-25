@@ -1,0 +1,16 @@
+# =============================================================================
+# requirements.txt — Dépendances figées du projet RAG Master ESA (ESActu)
+# =============================================================================
+
+chainlit==2.11.1
+groq
+chromadb
+langchain-chroma
+langchain-huggingface
+langchain-core
+langchain-text-splitters
+sentence-transformers
+openpyxl
+python-dotenv
+pyyaml
+torch
