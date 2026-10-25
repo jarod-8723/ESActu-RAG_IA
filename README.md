@@ -118,11 +118,6 @@ py -3.11 -m venv .venv
 pip install -r requirements.txt
 ```
 
-> ⚠️ `requirements.txt` couvre l'ingestion et l'interface. Pour le scraping, installer en plus :
-> ```powershell
-> pip install requests beautifulsoup4 html2text pymupdf4llm
-> ```
-
 ---
 
 ## ▶️ Utilisation
