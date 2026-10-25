@@ -14,3 +14,7 @@ openpyxl
 python-dotenv
 pyyaml
 torch
+requests 
+beautifulsoup4 
+html2text 
+pymupdf4llm
